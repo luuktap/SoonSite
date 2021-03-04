@@ -1,3 +1,3 @@
-let currentSite = window.location.hostname;
-$(document).attr('title', currentSite);
-$(`.site-name`).text(currentSite.toUpperCase());
+const currentSite = window.location.hostname;
+document.title = currentSite;
+document.getElementById('site-name').innerText = currentSite.toUpperCase();
